@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-manrope);
+  --font-display: var(--font-oswald);
+
+  --color-pink-city: #C97C83;
+  --color-dusty-rose: #D9A0A3;
+  --color-jaipur-rose: #B85C68;
+  --color-terracotta: #A95645;
+  --color-burgundy: #5B1F2A;
+  --color-ivory: #F4EBDD;
+  --color-pale-pink: #F1D8D4;
+  --color-charcoal: #211A19;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
+  }
+}
