@@ -192,16 +192,16 @@ export function Hero() {
           translateY: isMobile ? 0 : l4Y,
           translateZ: isMobile ? 0 : 50
         }}
-        className="relative z-20 w-full max-w-[1400px] mx-auto px-6 md:px-12 h-full flex flex-col justify-center mt-20"
+        className="relative z-20 w-full max-w-[1400px] mx-auto px-6 md:px-12 h-full flex flex-col justify-center mt-12 md:mt-20"
       >
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center h-full pt-32 pb-24">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-center h-full pt-24 pb-32 md:pt-32 md:pb-24">
           
           <div className="md:col-span-8 flex flex-col">
             <motion.span 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
-              className="font-display tracking-[0.2em] text-sm text-ivory/80 uppercase mb-8"
+              className="font-display tracking-[0.2em] text-[10px] md:text-sm text-ivory/80 uppercase mb-4 md:mb-8"
             >
               JAIPUR · RAJASTHAN
             </motion.span>
@@ -210,7 +210,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-              className="font-display text-6xl md:text-8xl lg:text-9xl tracking-tighter text-ivory leading-[0.9] flex flex-col mb-12 drop-shadow-2xl"
+              className="font-display text-[13vw] sm:text-6xl md:text-8xl lg:text-9xl tracking-tighter text-ivory leading-[0.9] flex flex-col mb-8 md:mb-12 drop-shadow-2xl"
             >
               <span className="md:ml-12">STAY</span>
               <span className="text-ivory/90 md:ml-0">IN THE</span>
@@ -223,10 +223,10 @@ export function Hero() {
               transition={{ duration: 1, delay: 0.6 }}
               className="max-w-md md:ml-12"
             >
-              <h3 className="font-display text-xl tracking-widest text-pink-city mb-4">
+              <h3 className="font-display text-lg md:text-xl tracking-widest text-pink-city mb-2 md:mb-4">
                 HOTEL JINENDRA PALACE
               </h3>
-              <p className="text-ivory/80 font-light leading-relaxed">
+              <p className="text-ivory/80 font-light leading-relaxed text-sm md:text-base">
                 A comfortable stay in the heart of Jaipur, close to the city's heritage, streets and stories.
               </p>
             </motion.div>
@@ -236,12 +236,12 @@ export function Hero() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.8 }}
-            className="md:col-span-4 flex flex-col gap-6 md:items-end justify-center mt-12 md:mt-0"
+            className="md:col-span-4 flex flex-col gap-4 md:gap-6 md:items-end justify-center mt-6 md:mt-0"
           >
             <Link
               ref={ctaRef}
               href="#book"
-              className="group font-display tracking-widest bg-pink-city text-charcoal px-8 py-4 w-full md:w-auto text-center flex items-center justify-center gap-3 hover:bg-jaipur-rose hover:text-ivory transition-colors duration-400 shadow-xl border border-transparent"
+              className="group font-display tracking-widest bg-pink-city text-charcoal px-6 py-4 md:px-8 md:py-4 w-full md:w-auto text-center flex items-center justify-center gap-3 hover:bg-jaipur-rose hover:text-ivory transition-colors duration-400 shadow-xl border border-transparent text-sm md:text-base"
             >
               <span className="relative z-10 flex items-center gap-2">
                 BOOK YOUR STAY
@@ -251,7 +251,7 @@ export function Hero() {
             
             <Link
               href="#hotel"
-              className="group font-display tracking-widest bg-transparent border border-ivory/30 text-ivory px-8 py-4 w-full md:w-auto text-center flex items-center justify-center gap-3 hover:border-ivory transition-all duration-300 hover:bg-ivory/5"
+              className="group font-display tracking-widest bg-transparent border border-ivory/30 text-ivory px-6 py-4 md:px-8 md:py-4 w-full md:w-auto text-center flex items-center justify-center gap-3 hover:border-ivory transition-all duration-300 hover:bg-ivory/5 text-sm md:text-base"
             >
               EXPLORE THE HOTEL
             </Link>
@@ -264,15 +264,15 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1.2 }}
-        className="absolute bottom-8 left-0 right-0 z-30 px-6 md:px-12 w-full max-w-[1400px] mx-auto flex justify-between items-end pointer-events-none"
+        className="absolute bottom-6 md:bottom-8 left-0 right-0 z-30 px-6 md:px-12 w-full max-w-[1400px] mx-auto flex justify-between items-end pointer-events-none"
       >
-        <div className="font-display tracking-widest text-[10px] md:text-xs text-ivory/50 uppercase leading-relaxed text-left pointer-events-auto">
+        <div className="font-display tracking-widest text-[8px] md:text-[10px] lg:text-xs text-ivory/50 uppercase leading-relaxed text-left pointer-events-auto">
           9 STATION ROAD<br />
           OPP. POLOVICTORY<br />
           SINDHI CAMP · JAIPUR
         </div>
         
-        <div className="flex flex-col items-center gap-3 absolute left-1/2 -translate-x-1/2 bottom-0 pointer-events-auto opacity-60 hover:opacity-100 transition-opacity">
+        <div className="hidden md:flex flex-col items-center gap-3 absolute left-1/2 -translate-x-1/2 bottom-0 pointer-events-auto opacity-60 hover:opacity-100 transition-opacity">
           <span className="font-display text-[10px] tracking-[0.3em] uppercase text-ivory">SCROLL TO EXPLORE</span>
           <div className="w-px h-12 bg-ivory/20 overflow-hidden relative">
             <motion.div 
