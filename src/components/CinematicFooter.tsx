@@ -252,7 +252,7 @@ Please share availability and tariff.`;
 
           <div
             ref={giantTextRef}
-            className="footer-giant-bg-text font-display absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight"
+            className="hidden md:block footer-giant-bg-text font-display absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap z-0 pointer-events-none select-none tracking-tight"
           >
             JAIPUR
           </div>

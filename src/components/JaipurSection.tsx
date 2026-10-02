@@ -29,8 +29,8 @@ export function JaipurSection() {
       <div className="w-full h-[60vh] md:h-[80vh] relative mb-24 md:mb-32 overflow-hidden shadow-2xl">
         <motion.div style={{ x: bgX }} className="absolute inset-0 w-[115%] h-full -left-[5%]">
           <Image
-            src="/images/hotel/jal_mahal.png"
-            alt="Jal Mahal Jaipur"
+            src="/images/hotel/jaipur_waiting.png"
+            alt="Amer Fort Jaipur"
             fill
             className="object-cover"
           />

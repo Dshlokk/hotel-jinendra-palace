@@ -150,7 +150,7 @@ export function Hero() {
           translateY: isMobile ? 0 : l2Y,
           translateZ: isMobile ? 0 : -100
         }}
-        className="absolute inset-0 z-10 flex flex-col items-center justify-center pointer-events-none overflow-hidden"
+        className="hidden md:flex absolute inset-0 z-10 flex-col items-center justify-center pointer-events-none overflow-hidden"
       >
         <h1 
           className="font-display text-[26vw] leading-[0.8] tracking-tighter text-ivory/20 select-none whitespace-nowrap relative"
