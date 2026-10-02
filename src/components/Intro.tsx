@@ -44,7 +44,7 @@ export function Intro() {
           >
             <div className="w-full h-full transform transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rotate-x-[2deg] group-hover:rotate-y-[-2deg] group-hover:scale-105">
               <Image
-                src="https://images.unsplash.com/photo-1605648916319-cf082f7524a1?q=80&w=2070"
+                src="/images/hotel/image_11.jpg"
                 alt="Jaipur architectural detail"
                 fill
                 className="object-cover"

@@ -10,14 +10,14 @@ const rooms = [
     description: "A spacious and elegantly appointed room offering comfort and quiet relaxation after a day in the city.",
     guests: "2 Guests",
     amenities: ["Air Conditioning", "Wi-Fi", "Room Service"],
-    image: "https://images.unsplash.com/photo-1618773928120-2c15c3ce46be?q=80&w=2070",
+    image: "/images/hotel/image_4.jpg",
   },
   {
     name: "SUPER DELUXE ROOM",
     description: "Upgraded comfort with additional space and premium furnishings for an enhanced heritage stay.",
     guests: "2 Guests + 1 Child",
     amenities: ["Air Conditioning", "Wi-Fi", "Room Service", "Laundry"],
-    image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1974",
+    image: "/images/hotel/image_5.jpg",
   }
 ];
 

@@ -17,7 +17,7 @@ export function Location() {
         >
           <div className="w-full h-full transform transition-transform duration-[1.5s] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.02]">
             <Image
-              src="https://images.unsplash.com/photo-1599839619722-39751411ea63?q=80&w=2071"
+              src="/images/hotel/image_6.jpg"
               alt="Jaipur Architecture"
               fill
               className="object-cover"

@@ -166,7 +166,7 @@ export function Hero() {
         </h1>
       </motion.div>
 
-      {/* LAYER 3: Subtle Architectural Detail (Hawa Mahal) */}
+      {/* LAYER 3: Subtle Architectural Detail */}
       <motion.div
         style={{
           y: scrollYProgress,
@@ -174,10 +174,10 @@ export function Hero() {
           translateY: isMobile ? 0 : l3Y,
           translateZ: isMobile ? 0 : -50
         }}
-        className="absolute bottom-0 right-0 w-[60vw] md:w-[40vw] h-[60vh] z-[15] opacity-[0.15] pointer-events-none mix-blend-screen"
+        className="absolute bottom-0 right-0 w-[60vw] md:w-[40vw] h-[60vh] z-[15] opacity-[0.25] pointer-events-none mix-blend-screen"
       >
         <Image
-          src="https://images.openai.com/static-rsc-4/1lfMuVNtaR8AAhuqa4P4UV07HkQxP8v145ztdLU1YBrL73ZkD06h3V4OURIgEmtXb2ImXMY94_g7R2J66EeYQgnJpljLAqN4OZqRKPTv3gggs7Ud23Fs3b-FFNGuE1uCjwcRuZpxloutZesMyb66aNkF90kqmD7OOXWt65E__AveIazfxo6cW7EOEBY9Iiur?purpose=fullsize"
+          src="/images/hotel/image_12.jpg"
           alt="Jaipur Detail"
           fill
           className="object-cover object-left-bottom [mask-image:linear-gradient(to_top,black,transparent)]"

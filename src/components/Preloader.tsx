@@ -61,7 +61,7 @@ export function Preloader() {
           className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-burgundy text-ivory overflow-hidden"
         >
           {/* Subtle background layers */}
-          <div className="absolute inset-0 bg-[url('https://images.openai.com/static-rsc-4/H9VV7e1fcJlMWOyuxThols6wQj1Pwt0ilVRaDNG_hBNdPDsZ8PXiv4xcwJD9KcPFC7lH51HEsHk2ke-3QpMIs8_dtipVeqxTXbuqN2HZVjzU8nIq6B4va5iXspO3tAp1Ma4DtmzuHVScFs-aorzN7tUVqC6SeWPyluBZzcOiSNclClAF1hU_gLINXU-TWh4s?purpose=fullsize')] bg-cover bg-center opacity-[0.05] mix-blend-overlay" />
+          <div className="absolute inset-0 bg-[url('/images/hotel/image_13.jpg')] bg-cover bg-center opacity-[0.05] mix-blend-overlay" />
           
           <div className="relative z-10 flex flex-col items-center justify-center">
             {/* Animated Text Reveal */}

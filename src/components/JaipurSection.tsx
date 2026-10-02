@@ -29,7 +29,7 @@ export function JaipurSection() {
       <div className="w-full h-[60vh] md:h-[80vh] relative mb-24 md:mb-32 overflow-hidden shadow-2xl">
         <motion.div style={{ x: bgX }} className="absolute inset-0 w-[115%] h-full -left-[5%]">
           <Image
-            src="https://images.openai.com/static-rsc-4/H9VV7e1fcJlMWOyuxThols6wQj1Pwt0ilVRaDNG_hBNdPDsZ8PXiv4xcwJD9KcPFC7lH51HEsHk2ke-3QpMIs8_dtipVeqxTXbuqN2HZVjzU8nIq6B4va5iXspO3tAp1Ma4DtmzuHVScFs-aorzN7tUVqC6SeWPyluBZzcOiSNclClAF1hU_gLINXU-TWh4s?purpose=fullsize"
+            src="/images/hotel/image_14.jpg"
             alt="Jaipur Landscape"
             fill
             className="object-cover"

@@ -27,8 +27,8 @@ export function HotelStory() {
           >
             <div className="w-full h-full transform transition-transform duration-[1.5s] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.02]">
               <Image
-                src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=2080"
-                alt="Hotel Jinendra Palace Lobby"
+                src="/images/hotel/image_2.jpg"
+                alt="Hotel Jinendra Palace Exterior"
                 fill
                 className="object-cover"
               />
@@ -45,8 +45,8 @@ export function HotelStory() {
             <div className="w-full h-full relative overflow-hidden shadow-2xl transform transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-4 group-hover:shadow-[0_30px_60px_rgba(91,31,42,0.15)] bg-ivory p-2 border border-dusty-rose/50">
               <div className="w-full h-full relative">
                 <Image
-                  src="https://images.unsplash.com/photo-1541971875076-8f970d573be6?q=80&w=1974"
-                  alt="Room Detail"
+                  src="/images/hotel/image_3.jpg"
+                  alt="Hotel Lobby Detail"
                   fill
                   className="object-cover"
                 />

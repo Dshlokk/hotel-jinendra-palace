@@ -5,26 +5,26 @@ import Image from "next/image";
 
 const galleryItems = [
   { 
-    name: "HAWA MAHAL", 
-    src: "https://images.openai.com/static-rsc-4/1lfMuVNtaR8AAhuqa4P4UV07HkQxP8v145ztdLU1YBrL73ZkD06h3V4OURIgEmtXb2ImXMY94_g7R2J66EeYQgnJpljLAqN4OZqRKPTv3gggs7Ud23Fs3b-FFNGuE1uCjwcRuZpxloutZesMyb66aNkF90kqmD7OOXWt65E__AveIazfxo6cW7EOEBY9Iiur?purpose=fullsize", 
+    name: "EXTERIOR", 
+    src: "/images/hotel/image_7.jpg", 
     aspect: "aspect-[3/4]",
     col: "md:col-span-5 md:mt-24"
   },
   { 
-    name: "CITY PALACE", 
-    src: "https://images.openai.com/static-rsc-4/GFx7Xjm8SJ3EBPsHVzuzsOA6Rl0cgsdWDtPHVH6mUKnuFzjx8nMmF8dRpZlpu4Th3PcHt1DrHRqz7wtp6P_E3thIfFZiYd7Sl5HIGodOyJ4HBM-cp57BRqXPvKOTUiOEqMv4-HO0RG-cGM9v8MZLpleYrObptBusEdzXBafaAZdmdmwQLCAplkiHQ7wXjxcB?purpose=fullsize", 
+    name: "LOBBY LOUNGE", 
+    src: "/images/hotel/image_8.jpg", 
     aspect: "aspect-[4/5]",
     col: "md:col-span-7"
   },
   { 
-    name: "JAL MAHAL", 
-    src: "https://images.openai.com/static-rsc-4/H9VV7e1fcJlMWOyuxThols6wQj1Pwt0ilVRaDNG_hBNdPDsZ8PXiv4xcwJD9KcPFC7lH51HEsHk2ke-3QpMIs8_dtipVeqxTXbuqN2HZVjzU8nIq6B4va5iXspO3tAp1Ma4DtmzuHVScFs-aorzN7tUVqC6SeWPyluBZzcOiSNclClAF1hU_gLINXU-TWh4s?purpose=fullsize", 
+    name: "COURTYARD", 
+    src: "/images/hotel/image_9.jpg", 
     aspect: "aspect-[16/9]",
     col: "md:col-span-12"
   },
   { 
-    name: "AMER FORT", 
-    src: "https://images.openai.com/static-rsc-4/H9VV7e1fcJlMWOyuxThols6wQj1Pwt0ilVRaDNG_hBNdPDsZ8PXiv4xcwJD9KcPFC7lH51HEsHk2ke-3QpMIs8_dtipVeqxTXbuqN2HZVjzU8nIq6B4va5iXspO3tAp1Ma4DtmzuHVScFs-aorzN7tUVqC6SeWPyluBZzcOiSNclClAF1hU_gLINXU-TWh4s?purpose=fullsize", 
+    name: "DINING", 
+    src: "/images/hotel/image_10.jpg", 
     aspect: "aspect-[3/4]",
     col: "md:col-span-6 md:col-start-4"
   }
