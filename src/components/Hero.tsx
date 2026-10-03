@@ -113,6 +113,9 @@ export function Hero() {
     mouseY.set(0);
   };
 
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "910000000000";
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Hotel%20Jinendra%20Palace,%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room.`;
+
   return (
     <section 
       ref={ref} 
@@ -240,7 +243,9 @@ export function Hero() {
           >
             <Link
               ref={ctaRef}
-              href="#book"
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group font-display tracking-widest bg-pink-city text-charcoal px-6 py-4 md:px-8 md:py-4 w-full md:w-auto text-center flex items-center justify-center gap-3 hover:bg-jaipur-rose hover:text-ivory transition-colors duration-400 shadow-xl border border-transparent text-sm md:text-base"
             >
               <span className="relative z-10 flex items-center gap-2">
@@ -288,3 +293,4 @@ export function Hero() {
     </section>
   );
 }
+

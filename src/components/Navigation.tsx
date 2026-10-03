@@ -8,6 +8,9 @@ import { Menu, X } from "lucide-react";
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "910000000000";
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Hotel%20Jinendra%20Palace,%20I%20would%20like%20to%20enquire%20about%20booking%20a%20room.`;
 
   const { scrollY } = useScroll();
 
@@ -52,7 +55,9 @@ export function Navigation() {
 
           <div className="hidden md:block">
             <Link 
-              href="#book"
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`font-display tracking-widest text-xs px-6 py-3 border transition-all duration-300 ${
                 isScrolled 
                   ? "border-burgundy text-ivory bg-burgundy hover:bg-charcoal hover:border-charcoal" 
@@ -107,7 +112,9 @@ export function Navigation() {
                 className="mt-8 pt-8 border-t border-ivory/20"
               >
                 <Link 
-                  href="#book"
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="font-display tracking-widest text-sm text-charcoal bg-pink-city px-8 py-4 inline-block text-center w-full"
                 >

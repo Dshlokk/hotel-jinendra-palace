@@ -276,7 +276,7 @@ Please share availability and tariff.`;
 
             <div ref={linksRef} className="flex flex-col items-center gap-10 md:gap-12 w-full">
               <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 w-full max-w-sm sm:max-w-none">
-                <MagneticButton as={Link} href="#book" className="footer-glass-pill px-8 py-4 md:px-10 md:py-5 rounded-none font-display tracking-widest text-sm md:text-base flex items-center justify-center gap-3 text-ivory group w-full sm:w-auto">
+                <MagneticButton as="a" href={whatsappLink} target="_blank" rel="noopener noreferrer" className="footer-glass-pill px-8 py-4 md:px-10 md:py-5 rounded-none font-display tracking-widest text-sm md:text-base flex items-center justify-center gap-3 text-ivory group w-full sm:w-auto">
                   BOOK YOUR STAY
                 </MagneticButton>
                 
@@ -320,3 +320,6 @@ Please share availability and tariff.`;
     </>
   );
 }
+
+
+

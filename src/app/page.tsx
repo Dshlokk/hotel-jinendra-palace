@@ -6,6 +6,7 @@ import { Rooms } from "@/components/Rooms";
 import { JaipurSection } from "@/components/JaipurSection";
 import { Gallery } from "@/components/Gallery";
 import { Location } from "@/components/Location";
+import { Testimonials } from "@/components/Testimonials";
 import { CinematicFooter } from "@/components/CinematicFooter";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { Preloader } from "@/components/Preloader";
@@ -29,6 +30,7 @@ export default function Home() {
         <JaipurSection />
         <Gallery />
         <Location />
+        <Testimonials />
       </div>
 
       {/* The Cinematic Footer is injected here and sits behind the main content */}
