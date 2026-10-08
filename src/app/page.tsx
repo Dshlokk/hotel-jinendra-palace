@@ -4,17 +4,14 @@ import { Intro } from "@/components/Intro";
 import { HotelStory } from "@/components/HotelStory";
 import { Rooms } from "@/components/Rooms";
 import { JaipurSection } from "@/components/JaipurSection";
-import { Gallery } from "@/components/Gallery";
 import { Location } from "@/components/Location";
 import { Testimonials } from "@/components/Testimonials";
 import { CinematicFooter } from "@/components/CinematicFooter";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import { Preloader } from "@/components/Preloader";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-ivory text-brown">
-      <Preloader />
       <Navigation />
       
       {/* 

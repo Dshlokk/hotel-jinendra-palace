@@ -4,6 +4,13 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+
 export function JaipurSection() {
   const ref = useRef<HTMLElement>(null);
   
@@ -15,8 +22,35 @@ export function JaipurSection() {
   const bgX = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"]);
   const textY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
 
+  const galleryImages = [
+    {
+      src: "https://images.pexels.com/photos/31836726/pexels-photo-31836726.jpeg?auto=compress&cs=tinysrgb&w=800",
+      alt: "Historical architecture at sunset in Jaipur"
+    },
+    {
+      src: "https://images.pexels.com/photos/2764364/pexels-photo-2764364.jpeg?auto=compress&cs=tinysrgb&w=800",
+      alt: "Amer Fort details"
+    },
+    {
+      src: "https://images.pexels.com/photos/12323903/pexels-photo-12323903.jpeg?auto=compress&cs=tinysrgb&w=800",
+      alt: "Hawa Mahal Courtyard"
+    },
+    {
+      src: "https://images.pexels.com/photos/3581364/pexels-photo-3581364.jpeg?auto=compress&cs=tinysrgb&w=800",
+      alt: "Jaipur Streets"
+    }
+  ];
+
   return (
     <section id="jaipur" ref={ref} className="relative z-10 bg-pink-city text-ivory py-24 md:py-32 overflow-hidden perspective-[1000px] border-t border-burgundy/10">
+      
+      {/* Background Image Layer */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center opacity-30 mix-blend-overlay"
+        style={{ backgroundImage: "url('/images/hotel/pink_city_bg.jpg')" }}
+      />
+      <div className="absolute inset-0 z-0 bg-pink-city/70" />
+
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-20">
         <motion.h2 
           style={{ y: textY }}
@@ -26,7 +60,7 @@ export function JaipurSection() {
         </motion.h2>
       </div>
 
-      <div className="w-full h-[60vh] md:h-[80vh] relative mb-24 md:mb-32 overflow-hidden shadow-2xl">
+      <div className="w-full h-[60vh] md:h-[80vh] relative mb-24 md:mb-32 overflow-hidden shadow-2xl z-20">
         <motion.div style={{ x: bgX }} className="absolute inset-0 w-[115%] h-full -left-[5%]">
           <Image
             src="/images/hotel/jaipur_waiting.png"
@@ -35,7 +69,7 @@ export function JaipurSection() {
             className="object-cover"
           />
           <div className="absolute inset-0 bg-burgundy/20 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-t from-pink-city via-transparent to-pink-city/50" />
+          <div className="absolute inset-0 bg-gradient-to-t from-pink-city/80 via-transparent to-pink-city/50" />
         </motion.div>
       </div>
 
@@ -51,43 +85,41 @@ export function JaipurSection() {
           </div>
         </div>
 
-        {/* Jaipur Gallery */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full mt-12 md:mt-24">
-          {[
-            {
-              src: "https://images.pexels.com/photos/31836726/pexels-photo-31836726.jpeg?auto=compress&cs=tinysrgb&w=800",
-              alt: "Historical architecture at sunset in Jaipur"
-            },
-            {
-              src: "https://images.pexels.com/photos/2764364/pexels-photo-2764364.jpeg?auto=compress&cs=tinysrgb&w=800",
-              alt: "Amer Fort details"
-            },
-            {
-              src: "https://images.pexels.com/photos/12323903/pexels-photo-12323903.jpeg?auto=compress&cs=tinysrgb&w=800",
-              alt: "Hawa Mahal Courtyard"
-            },
-            {
-              src: "https://images.pexels.com/photos/3581364/pexels-photo-3581364.jpeg?auto=compress&cs=tinysrgb&w=800",
-              alt: "Jaipur Streets"
-            }
-          ].map((img, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.8, delay: i * 0.15, ease: [0.22, 1, 0.36, 1] }}
-              className="relative aspect-[3/4] w-full overflow-hidden shadow-lg border border-burgundy/10 group rounded-sm"
-            >
-              <Image
-                src={img.src}
-                alt={img.alt}
-                fill
-                className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-burgundy/20 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            </motion.div>
-          ))}
+        {/* Jaipur Gallery - Coverflow Carousel */}
+        <div className="w-full mt-12 md:mt-24 pb-12">
+          <Swiper
+            effect={"coverflow"}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={"auto"}
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            pagination={{ clickable: true }}
+            modules={[EffectCoverflow, Pagination, Autoplay]}
+            className="w-full py-12"
+          >
+            {galleryImages.map((img, i) => (
+              <SwiperSlide key={i} className="w-[280px] md:w-[400px] lg:w-[500px] aspect-[3/4]">
+                <div className="w-full h-full relative rounded-xl overflow-hidden shadow-2xl border border-ivory/20">
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </section>
