@@ -24,19 +24,19 @@ export function JaipurSection() {
 
   const galleryImages = [
     {
-      src: "https://images.pexels.com/photos/31836726/pexels-photo-31836726.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: "https://images.pexels.com/photos/31836726/pexels-photo-31836726.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1500&fit=crop",
       alt: "Historical architecture at sunset in Jaipur"
     },
     {
-      src: "https://images.pexels.com/photos/2764364/pexels-photo-2764364.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: "https://images.pexels.com/photos/2764364/pexels-photo-2764364.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1500&fit=crop",
       alt: "Amer Fort details"
     },
     {
-      src: "https://images.pexels.com/photos/12323903/pexels-photo-12323903.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: "https://images.pexels.com/photos/12323903/pexels-photo-12323903.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1500&fit=crop",
       alt: "Hawa Mahal Courtyard"
     },
     {
-      src: "https://images.pexels.com/photos/3581364/pexels-photo-3581364.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: "https://images.pexels.com/photos/3581364/pexels-photo-3581364.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1500&fit=crop",
       alt: "Jaipur Streets"
     }
   ];
