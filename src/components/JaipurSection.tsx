@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
+import { EffectCoverflow, Pagination, Autoplay, Mousewheel, Keyboard } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -86,16 +86,18 @@ export function JaipurSection() {
         </div>
 
         {/* Jaipur Gallery - Coverflow Carousel */}
-        <div className="w-full mt-12 md:mt-24 pb-12">
+        <div className="w-full mt-12 md:mt-24 pb-12 overflow-visible">
           <Swiper
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
             slidesPerView={"auto"}
+            mousewheel={{ forceToAxis: true }}
+            keyboard={{ enabled: true }}
             coverflowEffect={{
-              rotate: 50,
+              rotate: 30,
               stretch: 0,
-              depth: 100,
+              depth: 200,
               modifier: 1,
               slideShadows: true,
             }}
@@ -104,12 +106,12 @@ export function JaipurSection() {
               disableOnInteraction: false,
             }}
             pagination={{ clickable: true }}
-            modules={[EffectCoverflow, Pagination, Autoplay]}
+            modules={[EffectCoverflow, Pagination, Autoplay, Mousewheel, Keyboard]}
             className="w-full py-12"
           >
             {galleryImages.map((img, i) => (
-              <SwiperSlide key={i} className="w-[280px] md:w-[400px] lg:w-[500px] aspect-[3/4]">
-                <div className="w-full h-full relative rounded-xl overflow-hidden shadow-2xl border border-ivory/20">
+              <SwiperSlide key={i} className="w-[85vw] sm:w-[400px] lg:w-[450px] aspect-[4/5] mx-auto">
+                <div className="w-full h-full relative overflow-hidden shadow-2xl border border-ivory/20">
                   <Image
                     src={img.src}
                     alt={img.alt}
