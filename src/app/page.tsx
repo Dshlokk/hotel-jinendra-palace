@@ -28,7 +28,6 @@ export default function Home() {
         <HotelStory />
         <Rooms />
         <JaipurSection />
-        <Gallery />
         <Location />
         <Testimonials />
       </div>

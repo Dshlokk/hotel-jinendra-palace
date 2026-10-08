@@ -13,10 +13,17 @@ const rooms = [
     image: "/images/hotel/image_4.jpg",
   },
   {
-    name: "SUPER DELUXE ROOM",
-    description: "Upgraded comfort with additional space and premium furnishings for an enhanced heritage stay.",
-    guests: "2 Guests + 1 Child",
-    amenities: ["Air Conditioning", "Wi-Fi", "Room Service", "Laundry"],
+    name: "TRIPLE DUPLEX ROOM",
+    description: "Ideal for small families or groups, this multi-level room offers extra space and privacy with a unique layout.",
+    guests: "3 Guests",
+    amenities: ["Air Conditioning", "Wi-Fi", "Room Service", "Extra Bed"],
+    image: "/images/hotel/image_6.jpg",
+  },
+  {
+    name: "FAMILY DUPLEX ROOM",
+    description: "Upgraded comfort with additional space across two levels and premium furnishings for an enhanced heritage stay.",
+    guests: "4 Guests",
+    amenities: ["Air Conditioning", "Wi-Fi", "Room Service", "Laundry", "Lounge Area"],
     image: "/images/hotel/image_5.jpg",
   }
 ];
