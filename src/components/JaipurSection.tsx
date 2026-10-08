@@ -50,6 +50,45 @@ export function JaipurSection() {
             </p>
           </div>
         </div>
+
+        {/* Jaipur Gallery */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full mt-12 md:mt-24">
+          {[
+            {
+              src: "https://images.pexels.com/photos/31836726/pexels-photo-31836726.jpeg?auto=compress&cs=tinysrgb&w=800",
+              alt: "Historical architecture at sunset in Jaipur"
+            },
+            {
+              src: "https://images.pexels.com/photos/2764364/pexels-photo-2764364.jpeg?auto=compress&cs=tinysrgb&w=800",
+              alt: "Amer Fort details"
+            },
+            {
+              src: "https://images.pexels.com/photos/12323903/pexels-photo-12323903.jpeg?auto=compress&cs=tinysrgb&w=800",
+              alt: "Hawa Mahal Courtyard"
+            },
+            {
+              src: "https://images.pexels.com/photos/3581364/pexels-photo-3581364.jpeg?auto=compress&cs=tinysrgb&w=800",
+              alt: "Jaipur Streets"
+            }
+          ].map((img, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.8, delay: i * 0.15, ease: [0.22, 1, 0.36, 1] }}
+              className="relative aspect-[3/4] w-full overflow-hidden shadow-lg border border-burgundy/10 group rounded-sm"
+            >
+              <Image
+                src={img.src}
+                alt={img.alt}
+                fill
+                className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-burgundy/20 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );

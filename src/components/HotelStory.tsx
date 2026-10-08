@@ -45,8 +45,8 @@ export function HotelStory() {
             <div className="w-full h-full relative overflow-hidden shadow-2xl transform transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-4 group-hover:shadow-[0_30px_60px_rgba(91,31,42,0.15)] bg-ivory p-2 border border-dusty-rose/50">
               <div className="w-full h-full relative">
                 <Image
-                  src="/images/hotel/image_3.jpg"
-                  alt="Hotel Lobby Detail"
+                  src="/images/hotel/dining.png"
+                  alt="Hotel Dining Area"
                   fill
                   className="object-cover"
                 />
