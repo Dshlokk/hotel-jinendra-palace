@@ -95,9 +95,9 @@ export function JaipurSection() {
             mousewheel={{ forceToAxis: true }}
             keyboard={{ enabled: true }}
             coverflowEffect={{
-              rotate: 30,
+              rotate: 20,
               stretch: 0,
-              depth: 200,
+              depth: 150,
               modifier: 1,
               slideShadows: true,
             }}
@@ -107,11 +107,11 @@ export function JaipurSection() {
             }}
             pagination={{ clickable: true }}
             modules={[EffectCoverflow, Pagination, Autoplay, Mousewheel, Keyboard]}
-            className="w-full py-12"
+            className="w-full py-8 md:py-12"
           >
             {galleryImages.map((img, i) => (
-              <SwiperSlide key={i} className="w-[85vw] sm:w-[400px] lg:w-[450px] aspect-[4/5] mx-auto">
-                <div className="w-full h-full relative overflow-hidden shadow-2xl border border-ivory/20">
+              <SwiperSlide key={i} className="w-[60vw] sm:w-[260px] md:w-[280px] lg:w-[320px] aspect-[4/5] mx-auto">
+                <div className="w-full h-full relative overflow-hidden shadow-2xl border border-ivory/20 rounded-md">
                   <Image
                     src={img.src}
                     alt={img.alt}
