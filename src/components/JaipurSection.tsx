@@ -86,7 +86,7 @@ export function JaipurSection() {
         </div>
 
         {/* Jaipur Gallery - Coverflow Carousel */}
-        <div className="w-full mt-12 md:mt-24 pb-12 overflow-visible">
+        <div className="w-full mt-8 md:mt-16 pb-8 overflow-visible">
           <Swiper
             effect={"coverflow"}
             grabCursor={true}
@@ -95,9 +95,9 @@ export function JaipurSection() {
             mousewheel={{ forceToAxis: true }}
             keyboard={{ enabled: true }}
             coverflowEffect={{
-              rotate: 20,
+              rotate: 15,
               stretch: 0,
-              depth: 150,
+              depth: 100,
               modifier: 1,
               slideShadows: true,
             }}
@@ -107,11 +107,11 @@ export function JaipurSection() {
             }}
             pagination={{ clickable: true }}
             modules={[EffectCoverflow, Pagination, Autoplay, Mousewheel, Keyboard]}
-            className="w-full py-8 md:py-12"
+            className="w-full py-4 md:py-8"
           >
             {galleryImages.map((img, i) => (
-              <SwiperSlide key={i} className="w-[60vw] sm:w-[260px] md:w-[280px] lg:w-[320px] aspect-[4/5] mx-auto">
-                <div className="w-full h-full relative overflow-hidden shadow-2xl border border-ivory/20 rounded-md">
+              <SwiperSlide key={i} className="w-[45vw] sm:w-[200px] md:w-[220px] lg:w-[260px] aspect-[4/5] mx-auto">
+                <div className="w-full h-full relative overflow-hidden shadow-xl border border-ivory/20 rounded-md">
                   <Image
                     src={img.src}
                     alt={img.alt}
